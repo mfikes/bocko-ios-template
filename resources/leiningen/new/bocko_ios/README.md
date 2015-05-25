@@ -11,12 +11,20 @@ You need Lein and CocoaPods and Xcode.
 5. Choose your discovered Bocko app.
 6. In the REPL, `(require '[bocko.core :refer [color plot scrn hlin vlin clear *color*]])`.
 
-Now you can use Bocko, plotting in your simulator or on your device.
+Now you can plot:
+```clojure
+(plot 2 3)      ;; plots a point on the screen
 
-```
-cljs.user=> (color :pink)
-nil
-cljs.user=> (plot 3 4)
-nil
+(color :pink)   ;; changes the color to pink
+(plot 5 5)
+
+(scrn 5 5)      ;; => :pink
+
+(hlin 3 9 10)   ;; draws a horizontal line
+
+(clear)         ;; clears screen
 ```
 
+The commands comprise `color`, `plot`, `scrn`, `hlin`, `vlin`, and `clear`.
+
+To get the documentation for a command, type, for example, `(doc color)` in the REPL.
