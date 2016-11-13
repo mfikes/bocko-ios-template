@@ -1,10 +1,11 @@
-(defproject bocko-ios "0.1.0"
+(defproject bocko-ios "1.0.0"
   :description "Use Bocko on iOS"
-  :dependencies [[org.clojure/clojure "1.7.0-RC1"]
-                 [org.clojure/clojurescript "0.0-3269"]
-                 [bocko "0.3.0"]
-                 [org.omcljs/ambly "0.3.0"]]
-  :plugins [[lein-cljsbuild "1.0.6"]]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.9.293"]
+                 [org.clojure/core.async "0.2.395"]
+                 [bocko "1.0.0"]
+                 [org.omcljs/ambly "0.7.0"]]
+  :plugins [[lein-cljsbuild "1.1.4"]]
   :source-paths ["src"]
   :clean-targets ["target" "out"]
   :cljsbuild {:builds {:dev
