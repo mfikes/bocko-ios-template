@@ -1,4 +1,4 @@
-(defproject bocko-ios/lein-template "1.1.0"
+(defproject bocko-ios/lein-template "1.1.1"
   :description "Template for Bocko iOS"
   :url "https://github.com/mfikes/bocko-ios-template"
   :license {:name "Eclipse Public License"
